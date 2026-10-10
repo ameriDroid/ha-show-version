@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "updated": "2026-10-10",
+  "channels": {
+    "stable": {
+      "xmos": {
+        "version": "1.0.1",
+        "path": "xmos/xvf3800_ua-io48-lin_aic3104_v1.0.1.bin",
+        "sha256": "9d8b58fe19d5b91a01868fbc377923b0e0c75a4faa462e1f57a2a14e0cb7af95",
+        "size": 921600,
+        "notes": "Same code as 1.0.0 with the version string bumped (flash/OTA test image). Includes the 3.5 mm jack speaker mute.",
+        "id": "xvf3800-ua-io48-lin-aic3104"
+      },
+      "firmware": {
+        "version": "0.1.0",
+        "path": "",
+        "sha256": "",
+        "size": 0,
+        "notes": "System OTA is not published yet."
+      }
+    },
+    "beta": {
+      "xmos": {
+        "version": "1.0.1",
+        "path": "xmos/xvf3800_ua-io48-lin_aic3104_v1.0.1.bin",
+        "sha256": "9d8b58fe19d5b91a01868fbc377923b0e0c75a4faa462e1f57a2a14e0cb7af95",
+        "size": 921600,
+        "notes": "Same code as 1.0.0 with the version string bumped (flash/OTA test image). Includes the 3.5 mm jack speaker mute.",
+        "id": "xvf3800-ua-io48-lin-aic3104"
+      },
+      "firmware": {
+        "version": "0.1.0",
+        "path": "",
+        "sha256": "",
+        "size": 0,
+        "notes": "System OTA is not published yet."
+      }
+    }
+  }
+}
