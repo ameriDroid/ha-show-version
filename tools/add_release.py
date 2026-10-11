@@ -14,14 +14,16 @@ import json
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-FEED = ROOT / "versions.json"
+import os
+FEED = pathlib.Path(os.environ["FEED_JSON"]) if os.environ.get("FEED_JSON") else ROOT / "versions.json"   # FEED_JSON: edit another copy (test feeds)
 
 ap = argparse.ArgumentParser()
-ap.add_argument("kind", choices=["xmos", "firmware"])
+ap.add_argument("kind", choices=["xmos", "firmware", "manager"])
 ap.add_argument("file")
 ap.add_argument("version")
 ap.add_argument("--channel", default="all", choices=["stable", "beta", "all"])
 ap.add_argument("--notes", default="")
+ap.add_argument("--version-code", type=int, default=0, help="Android versionCode (manager releases only)")
 ap.add_argument("--url", default="", help="absolute download URL for files hosted elsewhere (big OTA zips); no copy under this repo needed")
 a = ap.parse_args()
 
@@ -36,6 +38,8 @@ entry = {
     "size": len(data),
     "notes": a.notes,
 }
+if a.kind == "manager":
+    entry["versionCode"] = a.version_code
 
 feed = json.loads(FEED.read_text())
 channels = list(feed["channels"]) if a.channel == "all" else [a.channel]
