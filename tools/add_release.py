@@ -4,7 +4,7 @@
     tools/add_release.py xmos     <file.bin> <version> [--channel stable|beta|all] [--notes "..."]
     tools/add_release.py firmware <file>     <version> [--channel ...] [--notes "..."]
 
-Copies nothing: put the file under xmos/ or firmware/ yourself first, then pass its path. The script records the
+Copies nothing: put the file under xmos/ or firmware/ yourself first, then pass its path (or pass --url for a file hosted elsewhere, e.g. https://repo.bredos.org/hashow/). The script records the
 path (relative to versions.json), size and SHA-256 so clients can verify the download.
 """
 import argparse
@@ -22,14 +22,16 @@ ap.add_argument("file")
 ap.add_argument("version")
 ap.add_argument("--channel", default="all", choices=["stable", "beta", "all"])
 ap.add_argument("--notes", default="")
+ap.add_argument("--url", default="", help="absolute download URL for files hosted elsewhere (big OTA zips); no copy under this repo needed")
 a = ap.parse_args()
 
 f = pathlib.Path(a.file).resolve()
-rel = f.relative_to(ROOT).as_posix()
+rel = "" if a.url else f.relative_to(ROOT).as_posix()
 data = f.read_bytes()
 entry = {
     "version": a.version,
     "path": rel,
+    **({"url": a.url} if a.url else {}),
     "sha256": hashlib.sha256(data).hexdigest(),
     "size": len(data),
     "notes": a.notes,

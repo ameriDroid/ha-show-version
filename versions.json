@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "channels": {
     "stable": {
       "xmos": {
@@ -12,11 +12,12 @@
         "id": "xvf3800-ua-io48-lin-aic3104"
       },
       "firmware": {
-        "version": "0.1.0",
+        "version": "0.1.1",
         "path": "",
-        "sha256": "",
-        "size": 0,
-        "notes": "System OTA is not published yet."
+        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.1.zip",
+        "sha256": "38a9298d10ed930729232db093a3ead3c78e7a3c790d2e54efcc1882cc2aeddb",
+        "size": 798996025,
+        "notes": "First over-the-air update: setup wizard update step, Software update in the HA Show Manager, Kiosk Satellite first in the dashboard choice, fixed Erase all data, LEDs off at shutdown."
       }
     },
     "beta": {
@@ -29,11 +30,12 @@
         "id": "xvf3800-ua-io48-lin-aic3104"
       },
       "firmware": {
-        "version": "0.1.0",
+        "version": "0.1.1",
         "path": "",
-        "sha256": "",
-        "size": 0,
-        "notes": "System OTA is not published yet."
+        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.1.zip",
+        "sha256": "38a9298d10ed930729232db093a3ead3c78e7a3c790d2e54efcc1882cc2aeddb",
+        "size": 798996025,
+        "notes": "First over-the-air update: setup wizard update step, Software update in the HA Show Manager, Kiosk Satellite first in the dashboard choice, fixed Erase all data, LEDs off at shutdown."
       }
     }
   }
