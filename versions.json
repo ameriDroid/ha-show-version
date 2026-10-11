@@ -12,12 +12,21 @@
         "id": "xvf3800-ua-io48-lin-aic3104"
       },
       "firmware": {
-        "version": "0.1.5",
+        "version": "0.1.6",
         "path": "",
-        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.5.zip",
-        "sha256": "1f7b16e2ddead23e4376e879de191af05d646a729ec4527b04d76e8685491dd4",
-        "size": 798455932,
-        "notes": "Unified Software update card in the manager with a refresh button, clearer download progress with size and time left, Install and restart button, recovery menu that fits the VU5S with the ameriDroid logo, System update in Settings, Hardkernel demo and updater apps removed."
+        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.6.zip",
+        "sha256": "8d2e0f5522719b6f54a939466a51d91f4bf687b907d61dfa7f714cfb3a866da6",
+        "size": 798489598,
+        "notes": "Manager updates itself without a full update, new sensor drivers (barometers, BME680, motion sensors, light and colour) and unknown I2C devices listed, clearer update buttons, fixed the install dialog."
+      },
+      "manager": {
+        "version": "0.1.7",
+        "path": "",
+        "url": "https://repo.bredos.org/hashow/manager/hashow-manager-0.1.7.apk",
+        "sha256": "cb3c92052ced51d0b84ecb59d4d97ede6c04306ec98eb052a30676217381c730",
+        "size": 3136010,
+        "notes": "Update dialogs no longer flicker, quiet notification when an update is available.",
+        "versionCode": 7
       }
     },
     "beta": {
@@ -30,12 +39,21 @@
         "id": "xvf3800-ua-io48-lin-aic3104"
       },
       "firmware": {
-        "version": "0.1.5",
+        "version": "0.1.6",
         "path": "",
-        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.5.zip",
-        "sha256": "1f7b16e2ddead23e4376e879de191af05d646a729ec4527b04d76e8685491dd4",
-        "size": 798455932,
-        "notes": "Unified Software update card in the manager with a refresh button, clearer download progress with size and time left, Install and restart button, recovery menu that fits the VU5S with the ameriDroid logo, System update in Settings, Hardkernel demo and updater apps removed."
+        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.6.zip",
+        "sha256": "8d2e0f5522719b6f54a939466a51d91f4bf687b907d61dfa7f714cfb3a866da6",
+        "size": 798489598,
+        "notes": "Manager updates itself without a full update, new sensor drivers (barometers, BME680, motion sensors, light and colour) and unknown I2C devices listed, clearer update buttons, fixed the install dialog."
+      },
+      "manager": {
+        "version": "0.1.7",
+        "path": "",
+        "url": "https://repo.bredos.org/hashow/manager/hashow-manager-0.1.7.apk",
+        "sha256": "cb3c92052ced51d0b84ecb59d4d97ede6c04306ec98eb052a30676217381c730",
+        "size": 3136010,
+        "notes": "Update dialogs no longer flicker, quiet notification when an update is available.",
+        "versionCode": 7
       }
     }
   }
