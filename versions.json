@@ -12,21 +12,21 @@
         "id": "xvf3800-ua-io48-lin-aic3104"
       },
       "firmware": {
-        "version": "0.1.6",
-        "path": "",
-        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.6.zip",
-        "sha256": "8d2e0f5522719b6f54a939466a51d91f4bf687b907d61dfa7f714cfb3a866da6",
-        "size": 798489598,
-        "notes": "Manager updates itself without a full update, new sensor drivers (barometers, BME680, motion sensors, light and colour) and unknown I2C devices listed, clearer update buttons, fixed the install dialog."
-      },
-      "manager": {
         "version": "0.1.7",
         "path": "",
-        "url": "https://repo.bredos.org/hashow/manager/hashow-manager-0.1.7.apk",
-        "sha256": "cb3c92052ced51d0b84ecb59d4d97ede6c04306ec98eb052a30676217381c730",
+        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.7.zip",
+        "sha256": "5f3d55a08b400e9dbdfc69abab81d71c9ed67434e5a194e0c579e66a186ad986",
+        "size": 811529497,
+        "notes": "Bundled apps update from the extern-apps release; quiet defaults; Home fix; wizard resumes after an update"
+      },
+      "manager": {
+        "version": "0.1.8",
+        "path": "",
+        "url": "https://repo.bredos.org/hashow/manager/hashow-manager-0.1.8.apk",
+        "sha256": "d62b325164e49de33c366f80d71362b36be48272bccb6aa1b5edd129e7e0c742",
         "size": 3136010,
-        "notes": "Update dialogs no longer flicker, quiet notification when an update is available.",
-        "versionCode": 7
+        "notes": "Bundled apps update from the extern-apps release",
+        "versionCode": 8
       }
     },
     "beta": {
@@ -39,21 +39,21 @@
         "id": "xvf3800-ua-io48-lin-aic3104"
       },
       "firmware": {
-        "version": "0.1.6",
-        "path": "",
-        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.6.zip",
-        "sha256": "8d2e0f5522719b6f54a939466a51d91f4bf687b907d61dfa7f714cfb3a866da6",
-        "size": 798489598,
-        "notes": "Manager updates itself without a full update, new sensor drivers (barometers, BME680, motion sensors, light and colour) and unknown I2C devices listed, clearer update buttons, fixed the install dialog."
-      },
-      "manager": {
         "version": "0.1.7",
         "path": "",
-        "url": "https://repo.bredos.org/hashow/manager/hashow-manager-0.1.7.apk",
-        "sha256": "cb3c92052ced51d0b84ecb59d4d97ede6c04306ec98eb052a30676217381c730",
+        "url": "https://repo.bredos.org/hashow/hashow-ota-0.1.7.zip",
+        "sha256": "5f3d55a08b400e9dbdfc69abab81d71c9ed67434e5a194e0c579e66a186ad986",
+        "size": 811529497,
+        "notes": "Bundled apps update from the extern-apps release; quiet defaults; Home fix; wizard resumes after an update"
+      },
+      "manager": {
+        "version": "0.1.8",
+        "path": "",
+        "url": "https://repo.bredos.org/hashow/manager/hashow-manager-0.1.8.apk",
+        "sha256": "d62b325164e49de33c366f80d71362b36be48272bccb6aa1b5edd129e7e0c742",
         "size": 3136010,
-        "notes": "Update dialogs no longer flicker, quiet notification when an update is available.",
-        "versionCode": 7
+        "notes": "Bundled apps update from the extern-apps release",
+        "versionCode": 8
       }
     }
   }
